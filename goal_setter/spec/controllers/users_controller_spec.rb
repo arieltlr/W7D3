@@ -34,7 +34,7 @@ RSpec.describe UsersController, type: :controller do
         context 'with valid params' do 
             it 'creates the user' do 
                 user :create, params: valid_params
-                expect(User.last.username).to eq('Jerry')
+                expect(User.last.username).to eq('Tom')
                 expect(User.last.is_password?(password)).to eq('anewpassword')
             end
         end
